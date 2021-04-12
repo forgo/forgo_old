@@ -1,5 +1,5 @@
 import { h } from 'preact'
-import ReactDOMServer from 'react-dom/server'
+import { renderToString } from 'https://esm.sh/react-dom@17.0.2/server'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
 
 addEventListener("fetch", (event) => {
   // renderToString generates html string from JSX components.
-  const response = new Response(ReactDOMServer.renderToString(<App />), {
+  const response = new Response(renderToString(<App />), {
     headers: { "content-type": "text/html; charset=utf-8" },
   });
 
