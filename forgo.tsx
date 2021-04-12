@@ -1,4 +1,4 @@
-import { h } from 'preact'
+import { h } from 'https://esm.sh/preact@10.5.13'
 import { renderToString } from 'https://esm.sh/react-dom@17.0.2/server'
 
 function App() {
