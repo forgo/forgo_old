@@ -1,0 +1,10 @@
+{
+    "imports": {
+        "react-spring": "https://esm.sh/react-spring@9.1.0",
+        "react": "https://esm.sh/react@17.0.2",
+        "react-dom": "https://esm.sh/react-dom@17.0.2",
+        "preact": "https://esm.sh/preact@10.5.13",
+        "docz": "https://esm.sh/docz@2.3.1"
+    },
+    "scopes": {}
+}
