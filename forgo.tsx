@@ -1,4 +1,4 @@
-import { h } from 'preact'
+import { h } from 'https://esm.sh/preact@10.5.13'
 import ReactDOMServer from 'react-dom/server'
 
 function App() {
