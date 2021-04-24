@@ -1,3 +1,5 @@
+/// <reference path="./deploy.d.ts" />
+
 import React from "react";
 
 // You need to import `h` factory function as Deno Deploy
