@@ -1,5 +1,7 @@
-import { h } from 'https://esm.sh/preact@10.5.13'
-import { renderToString } from 'https://esm.sh/react-dom@17.0.2/server'
+// You need to import `h` factory function as Deno Deploy
+// uses it instead of `React.createElement`
+import { h } from "https://x.lcas.dev/preact@10.5.12/mod.js";
+import { renderToString } from "https://x.lcas.dev/preact@10.5.12/ssr.js";
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
 addEventListener("fetch", (event) => {
   // renderToString generates html string from JSX components.
   const response = new Response(renderToString(<App />), {
-    headers: { "content-type": "text/html; charset=utf-8" },
+    headers: { "content-type": "text/html; charset=uft-8" },
   });
 
   event.respondWith(response);
