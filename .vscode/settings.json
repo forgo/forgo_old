@@ -2,9 +2,9 @@
     "deno.unstable": true,
     "deno.enable": true,
     "deno.importMap": "./import_map.json",
-    "deno.import_intellisense_origins": {
+    "deno.suggest.imports.hosts": {
         "https://deno.land": true,
         "https://raw.githubusercontent.com": true,
-        "https://esm.sh": true,
-    },
+        "https://esm.sh": true
+    }
 }
