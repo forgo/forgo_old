@@ -7,7 +7,7 @@ import React from "https://esm.sh/react@17.0.2";
 import { h } from "https://x.lcas.dev/preact@10.5.12/mod.js";
 import { renderToString } from "https://x.lcas.dev/preact@10.5.12/ssr.js";
 
-import { App } from "~/app.tsx";
+import { App } from "./app.tsx";
 
 addEventListener("fetch", (event: FetchEvent) => {
   // renderToString generates html string from JSX components.
