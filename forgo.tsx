@@ -3,18 +3,7 @@
 import { h } from "https://x.lcas.dev/preact@10.5.12/mod.js";
 import { renderToString } from "https://x.lcas.dev/preact@10.5.12/ssr.js";
 
-function App() {
-  return (
-    <html>
-      <head>
-        <title>Hello from JSX</title>
-      </head>
-      <body>
-        <h1>Hello world</h1>
-      </body>
-    </html>
-  );
-}
+import { App } from "./app.tsx";
 
 addEventListener("fetch", (event) => {
   // renderToString generates html string from JSX components.
